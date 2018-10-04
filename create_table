@@ -1,0 +1,5 @@
+CREATE TABLE `product` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR NOT NULL ,
+ `price` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB; -- таблица с товаром
+
+CREATE TABLE `temporaryprice` ( `id` INT NOT NULL AUTO_INCREMENT , `dateFrom` DATE NOT NULL ,`dateTo` DATE NOT NULL ,
+ `price` INT NOT NULL ,`change_at` DATE NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB; --таблица с измененными ценами
